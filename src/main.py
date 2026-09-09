@@ -11,17 +11,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 async def root():
     return {
         "name": "Cahyonews AI",
         "status": "online",
-        "message": "Cahyonews AI API is running"
+        "message": "Cahyonews AI API is running",
     }
+
 
 @app.get("/api/health")
 async def health():
     return {
         "status": "ok",
-        "service": "cahyonews-ai"
+        "service": "cahyonews-ai",
     }
