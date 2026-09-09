@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cahyonews-ai-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
