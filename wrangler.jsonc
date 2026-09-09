@@ -1,0 +1,6 @@
+{
+  "name": "cahyonews-ai",
+  "compatibility_date": "2026-09-10",
+  "compatibility_flags": ["python_workers"],
+  "main": "src/main.py"
+}

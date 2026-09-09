@@ -1,0 +1,13 @@
+[project]
+name = "cahyonews-ai"
+version = "10.0.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi"
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk"
+]
