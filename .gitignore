@@ -1,0 +1,6 @@
+.wrangler/
+python_modules/
+.venv-workers/
+.venv/
+__pycache__/
+*.pyc

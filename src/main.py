@@ -27,3 +27,7 @@ async def health():
         "status": "ok",
         "service": "cahyonews-ai",
     }
+
+from workers import asgi
+
+Default = asgi.entrypoint(app)
