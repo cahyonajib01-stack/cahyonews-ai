@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.market_engine import market_engine
+from market_engine import market_engine
 
 
 app = FastAPI(title="Cahyonews AI")

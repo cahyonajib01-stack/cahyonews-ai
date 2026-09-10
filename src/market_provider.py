@@ -1,15 +1,15 @@
-import os
+from workers import env
 from typing import Any
 
-import httpx
+import httpx2 as httpx
 
 
 class TwelveDataProvider:
     BASE_URL = "https://api.twelvedata.com"
 
     def __init__(self) -> None:
-        self.api_key = os.getenv("TWELVE_DATA_API_KEY")
-        self.symbol = os.getenv("XAUUSD_DATA_SYMBOL", "XAU/USD")
+        self.api_key = getattr(env, "TWELVE_DATA_API_KEY", None)
+        self.symbol = getattr(env, "XAUUSD_DATA_SYMBOL", "XAU/USD")
 
     async def _get(
         self,

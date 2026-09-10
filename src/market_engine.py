@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from typing import Any
 
-from src.market_provider import market_provider
+from market_provider import market_provider
 
 
 class MarketEngine:
